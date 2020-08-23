@@ -1,0 +1,17 @@
+Max
+URL:https://www.makemytrip.com
+Login_Page:Enter Username :- Passed
+Login_Page: Login :- Login Failed
+PASSED: application_login
+
+===============================================
+    Default test
+    Tests run: 1, Failures: 0, Skips: 0
+===============================================
+
+
+===============================================
+Default suite
+Total tests run: 1, Failures: 0, Skips: 0
+===============================================
+
