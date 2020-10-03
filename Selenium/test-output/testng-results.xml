@@ -2,17 +2,49 @@
 <testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="4876" started-at="2019-12-25T05:47:28Z" finished-at="2019-12-25T05:47:33Z">
+  <suite name="Default suite" duration-ms="27769" started-at="2020-09-17T19:42:21Z" finished-at="2020-09-17T19:42:48Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="4876" started-at="2019-12-25T05:47:28Z" finished-at="2019-12-25T05:47:33Z">
-      <class name="Tests.Login">
-        <test-method status="FAIL" signature="application_login()[pri:0, instance:Tests.Login@482f8f11]" name="application_login" duration-ms="4847" started-at="2019-12-25T11:17:28Z" finished-at="2019-12-25T11:17:33Z">
-          <exception class="java.lang.NullPointerException">
+    <test name="Default test" duration-ms="27769" started-at="2020-09-17T19:42:21Z" finished-at="2020-09-17T19:42:48Z">
+      <class name="Tests.Dropdown">
+        <test-method status="FAIL" signature="olivegreen()[pri:1, instance:Tests.Dropdown@1de5f259]" name="olivegreen" duration-ms="27675" started-at="2020-09-18T01:12:21Z" finished-at="2020-09-18T01:12:48Z">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//div/button[starts-with(text(),'Order Now')]"}
+  (Session info: chrome=87.0.4263.3)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'VAIBHAV-PC', ip: '192.168.0.104', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_201'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4263.3, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\Users\VAIBHAV\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:54769}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 5a7f6be2130b87f000f9f07aa449fa8c
+*** Element info: {Using=xpath, value=//div/button[starts-with(text(),'Order Now')]}]]>
+            </message>
             <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
-	at Common.Common.maximize_browser(Common.java:32)
-	at Tests.Login.application_login(Login.java:35)
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div/button[starts-with(text(),'Order Now')]"}
+  (Session info: chrome=87.0.4263.3)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'VAIBHAV-PC', ip: '192.168.0.104', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_201'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4263.3, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\Users\VAIBHAV\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:54769}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 5a7f6be2130b87f000f9f07aa449fa8c
+*** Element info: {Using=xpath, value=//div/button[starts-with(text(),'Order Now')]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at Tests.Dropdown.olivegreen(Dropdown.java:23)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -40,15 +72,11 @@
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- application_login -->
-        <test-method status="PASS" signature="close()[pri:0, instance:Tests.Login@482f8f11]" name="close" is-config="true" duration-ms="1" started-at="2019-12-25T11:17:33Z" finished-at="2019-12-25T11:17:33Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- close -->
-      </class> <!-- Tests.Login -->
+        </test-method> <!-- olivegreen -->
+      </class> <!-- Tests.Dropdown -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
